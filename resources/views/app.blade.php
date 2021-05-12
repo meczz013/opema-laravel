@@ -9,11 +9,12 @@
 		<body>
 			<div class="container">
 				@include('messages')
-				@yield('content')			
+				@yield('content')		
 			</div>
-
+			<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 			<script type="text/javascript" src="{{ url('packages/bootstrap-4.3.1/js/bootstrap.min.js') }}"></script>
 			<script type="text/javascript" src="{{ url('packages/fontawesome/js/all.js') }}"></script>
+			<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 			@yield('after_scripts')
 		</body>
 </html>

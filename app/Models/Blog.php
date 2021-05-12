@@ -10,8 +10,14 @@ class Blog extends Model
     use HasFactory;
     protected $guarded = [];
 
+    public function scopeActive($query)
+    {
+    	$query->where('is_deleted', '!=', true);
+    }
+
    public function tag()
     {
     	return $this->belongsTo('App\Models\Tag', 'tag_id');
     }
+
 }

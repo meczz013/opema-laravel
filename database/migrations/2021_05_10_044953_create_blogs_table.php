@@ -13,14 +13,14 @@ class CreateBlogsTable extends Migration
      */
     public function up()
     {
-        Schema::create('blogs', function (Blueprint $table) {
-            $table->id();
-            $table->string('title', 50);
-            $table->string('content', 100)->nullable();
-            $table->string('image')->nullable();
-            $table->unsignedInteger('tag_id')->nullable();
-            $table->timestamps();
-        });
+        // Schema::create('blogs', function (Blueprint $table) {
+        //     $table->id();
+        //     $table->string('title', 50);
+        //     $table->string('content', 100)->nullable();
+        //     $table->string('image')->nullable();
+        //     $table->unsignedInteger('tag_id')->nullable();
+        //     $table->timestamps();
+        // });
     }
 
     /**

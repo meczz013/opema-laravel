@@ -13,11 +13,11 @@ class ModifyBlogsTable extends Migration
      */
     public function up()
     {
-        Schema::table('blogs', function (Blueprint $table) {
-            $table->string('title')->change();
-            $table->text('content')->nullable()->change();
-            $table->unsignedInteger('created_by')->nullable();
-        });
+        // Schema::table('blogs', function (Blueprint $table) {
+        //     $table->string('title')->change();
+        //     $table->text('content')->nullable()->change();
+        //     $table->unsignedInteger('created_by')->nullable();
+        // });
     }
 
     /**

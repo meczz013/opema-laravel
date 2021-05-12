@@ -21,3 +21,11 @@ Route::get('/', function () {
 Route::get('blog', 'App\Http\Controllers\BlogController@index');
 Route::get('blog/create', 'App\Http\Controllers\BlogController@create');
 Route::post('blog', 'App\Http\Controllers\BlogController@store');
+Route::get('blog/show/{id}', 'App\Http\Controllers\BlogController@show');
+Route::get('blog/edit/{id}', 'App\Http\Controllers\BlogController@edit');
+Route::patch('blog/update/{id}', 'App\Http\Controllers\BlogController@update');
+Route::delete('blog/destroy/{id}', 'App\Http\Controllers\BlogController@destroy');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
